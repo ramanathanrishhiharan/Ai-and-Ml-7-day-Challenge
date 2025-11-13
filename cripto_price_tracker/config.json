@@ -1,0 +1,35 @@
+{
+  "database": {
+    "name": "prices.db"
+  },
+  "api": {
+    "coins": [
+      "bitcoin",
+      "ethereum"
+    ],
+    "currency": "usd",
+    "timeout": 10,
+    "retry_attempts": 3,
+    "retry_delay": 5
+  },
+  "schedule": {
+    "interval_minutes": 5
+  },
+  "alerts": {
+    "threshold_percent": 5.0,
+    "email_enabled": false,
+    "log_enabled": true
+  },
+  "email": {
+    "smtp_server": "smtp.gmail.com",
+    "smtp_port": 587,
+    "sender": "",
+    "password": "",
+    "recipients": []
+  },
+  "logging": {
+    "level": "INFO",
+    "file": "crypto_tracker.log",
+    "console": true
+  }
+}
